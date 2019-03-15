@@ -100,14 +100,14 @@ double InteractionPredictor::ComputeTrajectoryCost(
 }
 
 double InteractionPredictor::ComputeLikelihood(const double cost) {
-  // TODO(kechxu) implement
-  return 0.0;
+  // TODO(kechxu) adjust alpha
+  double alpha = 1.0;
+  return std::exp(-alpha * cost);
 }
 
 double InteractionPredictor::ComputePosterior(
     const double prior, const double likelihood) {
-  // TODO(kechxu) implement
-  return 0.0;
+  return prior * likelihood;
 }
 
 }  // namespace prediction
