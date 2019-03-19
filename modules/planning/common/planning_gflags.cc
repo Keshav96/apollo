@@ -65,7 +65,7 @@ DEFINE_string(scenario_narrow_street_u_turn_config_file,
               "scenario/narrow_street_u_turn_config.pb.txt",
               "scenario_narrow_street_u_turn config file");
 
-DEFINE_bool(enable_scenario_side_pass, true,
+DEFINE_bool(enable_scenario_side_pass, false,
             "enable side pass scenario in planning");
 DEFINE_double(side_pass_min_signal_intersection_distance, 50.0,
               "meter, for intersection has signal, ADC will enter side pass "
@@ -76,9 +76,9 @@ DEFINE_bool(enable_scenario_side_pass_multiple_parked_obstacles, true,
 
 DEFINE_bool(enable_scenario_bare_intersection, false,
             "enable bare_intersection scenarios in planning");
-DEFINE_bool(enable_scenario_stop_sign, true,
+DEFINE_bool(enable_scenario_stop_sign, false,
             "enable stop_sign scenarios in planning");
-DEFINE_bool(enable_scenario_traffic_light, true,
+DEFINE_bool(enable_scenario_traffic_light, false,
             "enable traffic_light scenarios in planning");
 
 DEFINE_string(traffic_rule_config_filename,
